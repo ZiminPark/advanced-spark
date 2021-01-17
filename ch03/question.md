@@ -27,11 +27,16 @@ echo(arr: _*)
 
 
 # trainData 에서 cache 사용하는 이유? <br>
+- 캐시 안 하면 buildCounts가 속해있는 task? 를 ALS에서 처리할 때 마다 다시한다. ALS까지 엮여 있는 task여서 그런것 같다.
 
 # === vs == : 
 - [링크](https://stackoverflow.com/questions/39490236/difference-between-and-in-scala-spark) <br>
 
 # $"blah" 용법
 - model.itemFactors.select($"id".as("artist")) : $는 왜 붙이는건지? <br>
+- 54쪽,column 객체임을 나타내는 구문
 
 # head, take, show, limit 차이
+- head, take 은 같은 api인듯 -> Array를 return 
+- show는 print하는 함수 -> unit return
+- limit -> Dataset을 return
