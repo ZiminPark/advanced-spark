@@ -1,6 +1,12 @@
 # 메모리 문제 : 
 - free -m , config 설정 
 
+# ALS 병렬처리
+- X의 각 행 i는 Y와 A의 한 행의 함수로 독립적으로 계산 가능
+- 독립적으로 수행할 수 있으니 병렬 처리가 가능
+- ![1.png](1.png)
+- ![2.png](2.png)
+
 # split vs span 
 - split은 string에서 쓸 수 있다. 인자 기준으로 자른다. python이랑 같음. 이상하게 " "도 괜찮고 ' '도 괜찮다. 
 - span은 collection에서 쓸 수 있나? 인자로 predicator를 받는다. partition하는 것과 비슷 [링크](https://alvinalexander.com/scala/how-to-split-sequences-subsets-groupby-partition-scala-cookbook/)
