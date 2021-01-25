@@ -1,12 +1,6 @@
 # 메모리 문제 : 
 - free -m , config 설정 
 
-# ALS 병렬처리
-- X의 각 행 i는 Y와 A의 한 행의 함수로 독립적으로 계산 가능
-- 독립적으로 수행할 수 있으니 병렬 처리가 가능
-- ![3.png](3.jpg)
-- ![1.png](1.png)
-- ![2.png](2.png)
 
 # split vs span 
 - split은 string에서 쓸 수 있다. 인자 기준으로 자른다. python이랑 같음. 이상하게 " "도 괜찮고 ' '도 괜찮다. 
@@ -38,11 +32,20 @@ echo(arr: _*)
 # === vs == : 
 - [링크](https://stackoverflow.com/questions/39490236/difference-between-and-in-scala-spark)
 
-# $"blah" 용법
-- model.itemFactors.select($"id".as("artist")) : $는 왜 붙이는건지?
+# ALS 병렬처리
+- X의 각 행 i는 Y와 A의 한 행의 함수로 독립적으로 계산 가능
+- 독립적으로 수행할 수 있으니 병렬 처리가 가능
+- ![3.png](3.jpg)
+- ![1.png](1.png)
+- ![2.png](2.png)
+
+# \$"blah" 용법
+- model.itemFactors.select(\$"id".as("artist")) : $는 왜 붙이는건지?
 - 54쪽,column 객체임을 나타내는 구문
 
 # head, take, show, limit 차이
 - head, take 은 같은 api인듯 -> Array를 return 
 - show는 print하는 함수 -> unit return
 - limit -> Dataset을 return
+
+partition in bucketing, parquet
