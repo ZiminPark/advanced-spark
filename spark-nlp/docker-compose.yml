@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    spark:
+        # image: dream2globe/spark-nlp:spark-2.4.7
+        build: . 
+        container_name: spark-nlp
+        volumes:
+            - ~/spark-nlp:/home/zimin/app
+        ports:
+            - 8888:8888
+            - 4040:4040
+            - 4041:4041
+            - 9083:9083
